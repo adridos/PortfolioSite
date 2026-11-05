@@ -20,6 +20,16 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 .nav-link:focus-visible{outline:none}
 @media (prefers-reduced-motion: reduce){.nav-link,.nav-link::after{transition:none}}
 </style>
+<style>
+.pill{border:1.5px solid transparent;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.btn-moss{border-color:#4F5F2F}
+.btn-moss:hover,.btn-moss:focus-visible{background:transparent !important;color:#4F5F2F !important}
+.btn-brown-outline:hover,.btn-brown-outline:focus-visible{background:#4A3326 !important;color:#F5EFE3 !important}
+.btn-cream{border-color:#F5EFE3}
+.btn-cream:hover,.btn-cream:focus-visible{background:transparent !important;color:#F5EFE3 !important}
+.btn-cream-outline:hover,.btn-cream-outline:focus-visible{background:#F5EFE3 !important;color:#2F3820 !important}
+@media (prefers-reduced-motion: reduce){.pill{transition:none}}
+</style>
 </head>
 <body>
 <div style="background: #F5EFE3; color: #4A3326; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh">
@@ -40,8 +50,8 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 <h1 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: clamp(44px, 6vw, 76px); line-height: 1.04; letter-spacing: -0.02em">Technology that works <em style="color: #4F5F2F">the way people do.</em></h1>
 <p style="margin: 28px 0 0; max-width: 560px; font-size: 19px; line-height: 1.6; color: #55524A">With degrees in psychology and computer science, I live where people and technology meet. I listen to what a team is trying to do, then build the tools, processes and experiences that help them work smarter, not harder.</p>
 <div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px">
-<a href="#work" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; background: #4F5F2F; color: #FBF8F1; text-decoration: none; font-weight: 500">See my work</a>
-<a href="assets/Adriana_Dostine_Resume.pdf" download="Adriana_Dostine_Resume.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1.5px solid #4A3326; color: #4A3326; text-decoration: none; font-weight: 500">Download résumé</a>
+<a class="pill btn-moss" href="#work" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; background: #4F5F2F; color: #FBF8F1; text-decoration: none; font-weight: 500">See my work</a>
+<a class="pill btn-brown-outline" href="assets/Adriana_Dostine_Resume.pdf" download="Adriana_Dostine_Resume.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1.5px solid #4A3326; color: #4A3326; text-decoration: none; font-weight: 500">Download résumé</a>
 </div>
 </div>
 <div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center">
@@ -204,10 +214,10 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 <div style="max-width: 1160px; margin: 0 auto; padding: 72px 24px 40px">
 <h2 style="margin: 0 0 32px; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4vw, 44px); line-height: 1.1">Contact</h2>
 <div style="display: flex; flex-wrap: wrap; gap: 14px">
-<a href="mailto:adriana.dostine@hotmail.com" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; background: #F5EFE3; color: #2F3820; text-decoration: none; font-weight: 600">adriana.dostine@hotmail.com</a>
-<a href="https://linkedin.com/in/adriana-dostine" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1.5px solid #F5EFE3; color: #F5EFE3; text-decoration: none; font-weight: 500">LinkedIn</a>
-<a href="https://github.com/adridos" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1.5px solid #F5EFE3; color: #F5EFE3; text-decoration: none; font-weight: 500">GitHub</a>
-<a href="assets/Adriana_Dostine_Resume.pdf" download="Adriana_Dostine_Resume.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1.5px solid #F5EFE3; color: #F5EFE3; text-decoration: none; font-weight: 500">Résumé (PDF)</a>
+<a class="pill btn-cream" href="mailto:adriana.dostine@hotmail.com" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; background: #F5EFE3; color: #2F3820; text-decoration: none; font-weight: 600">adriana.dostine@hotmail.com</a>
+<a class="pill btn-cream-outline" href="https://linkedin.com/in/adriana-dostine" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1.5px solid #F5EFE3; color: #F5EFE3; text-decoration: none; font-weight: 500">LinkedIn</a>
+<a class="pill btn-cream-outline" href="https://github.com/adridos" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1.5px solid #F5EFE3; color: #F5EFE3; text-decoration: none; font-weight: 500">GitHub</a>
+<a class="pill btn-cream-outline" href="assets/Adriana_Dostine_Resume.pdf" download="Adriana_Dostine_Resume.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1.5px solid #F5EFE3; color: #F5EFE3; text-decoration: none; font-weight: 500">Résumé (PDF)</a>
 </div>
 <p style="margin: 56px 0 0; padding-top: 24px; border-top: 1px solid #56603F; font-size: 14px; color: #BDB9A6">© 2026 Adriana Dostine · Waterford, Michigan</p>
 </div>
