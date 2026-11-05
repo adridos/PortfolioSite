@@ -7,6 +7,3 @@ Personal portfolio site: UX, project coordination and software engineering.
 
 ## Publish with GitHub Pages
 Settings → Pages → Source: **Deploy from a branch** → Branch: `main`, folder `/ (root)`.
-
-## To do
-- Replace the bracketed image placeholders in **Recent projects** with screenshots
