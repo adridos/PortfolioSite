@@ -30,6 +30,11 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 .btn-cream-outline:hover,.btn-cream-outline:focus-visible{background:#F5EFE3 !important;color:#2F3820 !important}
 @media (prefers-reduced-motion: reduce){.pill{transition:none}}
 </style>
+<style>
+.card{transition:transform .25s ease,box-shadow .25s ease;box-shadow:0 1px 2px rgba(74,51,38,.04)}
+.card:hover,.card:focus-within{transform:translateY(-6px);box-shadow:0 18px 36px -12px rgba(74,51,38,.22),0 4px 10px rgba(74,51,38,.06)}
+@media (prefers-reduced-motion: reduce){.card{transition:box-shadow .2s ease}.card:hover,.card:focus-within{transform:none}}
+</style>
 </head>
 <body>
 <div style="background: #F5EFE3; color: #4A3326; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh">
@@ -76,7 +81,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 32px">
 
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
 <img src="assets/builder-insights.png" alt="SE Michigan Builder Intelligence Report showing builder cards with price ranges and communities" style="width: 100%; height: 260px; object-fit: cover; object-position: top left; display: block; background: #E9E3D3">
 <div style="padding: 32px">
 <p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5F2F; font-weight: 600">Data · Interactive report</p>
@@ -86,7 +91,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 </div>
 </article>
 
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
 <img src="assets/estate-attorney.png" alt="Estate attorney partner landing page hero: A trusted real estate partner for your most sensitive client matters" style="width: 100%; height: 260px; object-fit: cover; object-position: center top; display: block; background: #E9E3D3">
 <div style="padding: 32px">
 <p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5F2F; font-weight: 600">Web design · Partner outreach</p>
@@ -96,7 +101,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 </div>
 </article>
 
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
 <img src="assets/trello-pipeline.png" alt="Trello buyer pipeline board with columns from Under Contract through Closing, client names blurred" style="width: 100%; height: 260px; object-fit: cover; object-position: left top; display: block; background: #E9E3D3">
 <div style="padding: 32px">
 <p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5F2F; font-weight: 600">Process design · Operations</p>
@@ -105,7 +110,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 </div>
 </article>
 
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
 <img src="assets/internship-packet.png" alt="Cover of the Stewart Team Summer 2025 Internship Packet" style="width: 100%; height: 260px; object-fit: cover; object-position: center 38%; display: block; background: #F9F5EE">
 <div style="padding: 32px">
 <p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5F2F; font-weight: 600">Program design · Mentorship</p>
@@ -114,7 +119,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 </div>
 </article>
 
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
 <img src="assets/morning-crumbs.png" alt="Morning Crumbs website About page with a family photo and the bakery story" style="width: 100%; height: 260px; object-fit: cover; object-position: center 30%; display: block; background: #F7F3EC">
 <div style="padding: 32px">
 <p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5F2F; font-weight: 600">Brand from scratch</p>
@@ -133,7 +138,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 <p style="margin: 0; max-width: 380px; color: #55524A; line-height: 1.6">Front-end development and team projects from my time at Ford and AAA's Hatch Garage innovation team.</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 32px">
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column">
 <video src="assets/ford-demo.mp4" poster="assets/ford-digital-account.png" controls muted playsinline preload="metadata" aria-label="Demo recording of the Ford Digital Account site" style="width: 100%; height: 220px; object-fit: cover; display: block; background: #E9E3D3"></video>
 <div style="padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 12px; flex-grow: 1">
 <p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5F2F; font-weight: 600">Ford Motor Company · Summer 2022</p>
@@ -142,7 +147,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 <p style="margin: 0; font-size: 13px; color: #6A6658">HTML · CSS · JavaScript · Figma handoff</p>
 </div>
 </article>
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column">
 <img src="assets/hatch-timeline.png" alt="Hatch Garage interactive history timeline" style="width: 100%; height: 220px; object-fit: cover; object-position: top; display: block; background: #E9E3D3">
 <div style="padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 12px; flex-grow: 1">
 <p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5F2F; font-weight: 600">AAA Hatch Garage · Fall 2022</p>
@@ -151,7 +156,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 <p style="margin: 0; font-size: 13px; color: #6A6658">HTML · CSS · JavaScript</p>
 </div>
 </article>
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column">
 <img src="assets/intern-garage.png" alt="Intern Garage site FAQ page" style="width: 100%; height: 220px; object-fit: cover; object-position: top; display: block; background: #E9E3D3">
 <div style="padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 12px; flex-grow: 1">
 <p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5F2F; font-weight: 600">AAA · Fall 2022</p>
@@ -160,7 +165,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 <p style="margin: 0; font-size: 13px; color: #6A6658">HTML · CSS · JavaScript</p>
 </div>
 </article>
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column">
 <img src="assets/risky-business.png" alt="Risky Business game title screen" style="width: 100%; height: 220px; object-fit: cover; object-position: center; display: block; background: #E9E3D3">
 <div style="padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 12px; flex-grow: 1">
 <p style="margin: 0; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5F2F; font-weight: 600">AAA · Winter 2023</p>
@@ -175,7 +180,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 <section aria-labelledby="school" style="max-width: 1160px; margin: 0 auto; padding: 48px 24px 32px">
 <h2 id="school" style="margin: 0 0 32px; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 32px; color: #4A3326">School projects</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 32px">
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; background: #E9E3D3">
 <img src="assets/grizzblocks-menu.png" alt="GrizzBlocks title menu" style="width: 100%; height: 180px; object-fit: cover; object-position: center; display: block; background: #E9E3D3">
 <img src="assets/grizzblocks-play.png" alt="GrizzBlocks gameplay screen" style="width: 100%; height: 180px; object-fit: cover; object-position: center; display: block; background: #E9E3D3">
@@ -186,7 +191,7 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 <p style="margin: 0; color: #55524A; line-height: 1.55; font-size: 15px">Led the team that built an Oakland University take on Tetris, shipped in about three months.</p>
 </div>
 </article>
-<article style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
+<article class="card" style="background: #FBF8F1; border-radius: 24px; overflow: hidden">
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; background: #E9E3D3">
 <img src="assets/bakery-login.png" alt="The Bakery login page" style="width: 100%; height: 180px; object-fit: cover; object-position: center; display: block; background: #E9E3D3">
 <img src="assets/bakery-menu.png" alt="The Bakery ordering menu" style="width: 100%; height: 180px; object-fit: cover; object-position: center; display: block; background: #E9E3D3">
