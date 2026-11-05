@@ -9,5 +9,4 @@ Personal portfolio site: UX, project coordination and software engineering.
 Settings → Pages → Source: **Deploy from a branch** → Branch: `main`, folder `/ (root)`.
 
 ## To do
-- Add `assets/resume.pdf` (the résumé buttons link to it)
 - Replace the bracketed image placeholders in **Recent projects** with screenshots
