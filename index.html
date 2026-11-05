@@ -12,17 +12,25 @@ body{margin:0;background:#F5EFE3}
 a{color:#3F4E26}a:hover{color:#2C3819}
 </style>
 <style>html{scroll-behavior:smooth}img,video{max-width:100%}</style>
+<style>
+.nav-link{position:relative;transition:color .2s ease}
+.nav-link::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:#4F5F2F;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nav-link:hover,.nav-link:focus-visible{color:#4F5F2F !important}
+.nav-link:hover::after,.nav-link:focus-visible::after{transform:scaleX(1)}
+.nav-link:focus-visible{outline:none}
+@media (prefers-reduced-motion: reduce){.nav-link,.nav-link::after{transition:none}}
+</style>
 </head>
 <body>
 <div style="background: #F5EFE3; color: #4A3326; font-family: 'DM Sans', system-ui, sans-serif; min-height: 100vh">
 
 <header style="max-width: 1160px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
-<a href="#top" style="font-family: 'Fraunces', Georgia, serif; font-size: 22px; text-decoration: none; color: #4A3326">Adriana Dostine</a>
+<a class="nav-link" href="#top" style="font-family: 'Fraunces', Georgia, serif; font-size: 22px; text-decoration: none; color: #4A3326">Adriana Dostine</a>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px">
-<a href="#work" style="text-decoration: none; color: #4A3326">Work</a>
-<a href="#internships" style="text-decoration: none; color: #4A3326">Internships</a>
-<a href="#about" style="text-decoration: none; color: #4A3326">About</a>
-<a href="#contact" style="text-decoration: none; color: #4F5F2F; font-weight: 600">Contact</a>
+<a class="nav-link" href="#work" style="text-decoration: none; color: #4A3326">Work</a>
+<a class="nav-link" href="#internships" style="text-decoration: none; color: #4A3326">Internships</a>
+<a class="nav-link" href="#about" style="text-decoration: none; color: #4A3326">About</a>
+<a class="nav-link" href="#contact" style="text-decoration: none; color: #4F5F2F; font-weight: 600">Contact</a>
 </nav>
 </header>
 
@@ -54,7 +62,6 @@ a{color:#3F4E26}a:hover{color:#2C3819}
 <section id="work" style="max-width: 1160px; margin: 0 auto; padding: 112px 24px 48px">
 <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; justify-content: space-between; margin-bottom: 48px">
 <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: clamp(36px, 4vw, 52px); letter-spacing: -0.01em">Recent projects</h2>
-<p style="margin: 0; max-width: 380px; color: #55524A; line-height: 1.6">Each project starts with a real problem and ends with something a team can't imagine working without.</p>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 32px">
